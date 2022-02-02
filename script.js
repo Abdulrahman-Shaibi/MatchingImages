@@ -104,6 +104,7 @@ const restart = (text) => {
     setTimeout(() => {
         images[index].style.pointerEvents = "all";
         front[index].src = item.imgSrc;
+        images[index].setAttribute("name", item.name);
         section.style.pointerEvents = "all";
     },1000)
    });
